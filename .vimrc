@@ -2,15 +2,6 @@
 " To learn about options `:help <option>`
 " ------------------------------------------------------
 
-" Set tab to 4 spaces ----------------------------------
-" ------------------------------------------------------
-"   To enter actual tab character, while in insert mode,
-"   first enter ctrl-v, then hit tab
-" ------------------------------------------------------
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
 " Set sytax highlighting for .cu and .x files ----------
 au BufNewFile,BufRead *.cu set ft=cuda
 autocmd BufNewFile,BufRead *.x set syntax=sh
@@ -35,3 +26,12 @@ autocmd BufReadPost *
 
 " Allow backspace on Macs ------------------------------
 set backspace=indent,eol,start
+
+" Set tab to 4 spaces ----------------------------------
+" ------------------------------------------------------
+"   To enter actual tab character, while in insert mode,
+"   first enter ctrl-v, then hit tab
+" ------------------------------------------------------
+set tabstop=4
+set shiftwidth=4
+set expandtab
